@@ -18,7 +18,7 @@ func StartTCPClient() {
 
 	for {
 		reader := bufio.NewReader(os.Stdin)
-		fmt.Println("Key in your message: ")
+		fmt.Println("Key in your messagess: ")
 		message, _ := reader.ReadString('\n')
 		fmt.Fprintf(conn, message+"\n")
 
